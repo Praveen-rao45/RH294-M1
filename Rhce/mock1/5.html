@@ -11,10 +11,14 @@
 <br>
 <font size=4>
 &nbsp 5) Create a playbook called roles.yml and it should run balancer and phpinfo roles.<br><br>
-&nbsp a) Run the balancer role on test group. <br>
-&nbsp b) Run the phpinfo role on dev group.  <br><br>
-&nbsp Phpinfo output: <br><br>
-&nbsp Access the url http://serverb.lab.example.com and you can see the content "Welcome to Advpro". &nbsp <br>
+&nbsp a) Run the balancer role on balancer group. <br>
+&nbsp b) Run the phpinfo role on webservers group.  <br><br>
+&nbsp output verify: <br><br>
+&nbsp  a) Browsing, the balancers host group with url http://serverd.lab.example.com that produce the output <br>
+&nbsp &nbsp &nbsp      "Welcome to servera.lab.example.com, (version 1.0)". &nbsp <br>
+&nbsp b) Refreshing, the balancers host group with the same url the output should be change. &nbsp <br>
+&nbsp &nbsp &nbsp       "Welcome to serverc.lab.example.com, (version 1.0)" &nbsp <br>
+
 </font><br>
 <inop></table><br>
 <center><a href="javascript:history.back()"><img src="BACK.png" height="60px" width="60px" border="0"></a></center>
