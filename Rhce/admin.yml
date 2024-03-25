@@ -12,7 +12,7 @@
     lvg:
       vg: research
       pvs: /dev/vdb1
-- name: partition to create 500M
+- name: partition to create 550M
   hosts: serverc.lab.example.com
   tasks:
   - name: Correct partitions exist on /dev/vdb
@@ -20,7 +20,7 @@
       device: /dev/vdb
       state: present
       number:  1
-      part_end: 500MiB
+      part_end: 550MiB
   - name: Ensure Volume Groups Exist or Else Create
     lvg:
       vg: research
