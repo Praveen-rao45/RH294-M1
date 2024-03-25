@@ -1,5 +1,7 @@
 # RH294V9K Mock 1
 
+# Delete the Lab & Recreate it again
+
 # Open workstation terminal & switch to user root then run the following commands,
 
 # su - root
