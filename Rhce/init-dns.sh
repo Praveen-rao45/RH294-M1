@@ -51,11 +51,11 @@ ssh root@serverc  "hostnamectl set-hostname node3.lab.example.com ; hostname nod
 ssh root@serverd  "hostnamectl set-hostname node4.lab.example.com ; hostname node4.lab.example.com"   > /dev/null 2>&1
 ssh root@utility  "hostnamectl set-hostname node5.lab.example.com ; hostname node5.lab.example.com"   > /dev/null 2>&1
 
-ssh root@servera  "echo 'exclude=python3*'  >>  /etc/dnf/dnf.conf'"   > /dev/null 2>&1
-ssh root@serverb  "echo 'exclude=python3*'  >>  /etc/dnf/dnf.conf'"   > /dev/null 2>&1
-ssh root@serverc  "echo 'exclude=python3*'  >>  /etc/dnf/dnf.conf'"   > /dev/null 2>&1
-ssh root@serverd  "echo 'exclude=python3*'  >>  /etc/dnf/dnf.conf'"   > /dev/null 2>&1
-ssh root@utility  "echo 'exclude=python3*'  >>  /etc/dnf/dnf.conf'"   > /dev/null 2>&1
+ssh root@servera  "echo 'exclude=python3*'  >>  /etc/dnf/dnf.conf"   > /dev/null 2>&1
+ssh root@serverb  "echo 'exclude=python3*'  >>  /etc/dnf/dnf.conf"   > /dev/null 2>&1
+ssh root@serverc  "echo 'exclude=python3*'  >>  /etc/dnf/dnf.conf"   > /dev/null 2>&1
+ssh root@serverd  "echo 'exclude=python3*'  >>  /etc/dnf/dnf.conf"   > /dev/null 2>&1
+ssh root@utility  "echo 'exclude=python3*'  >>  /etc/dnf/dnf.conf"   > /dev/null 2>&1
 
 
 echo "Restarting DNS Service.."
