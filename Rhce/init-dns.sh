@@ -65,6 +65,10 @@ ICAgICAgICAgICAgICAgICAgICBJTiAgUFRSICBub2RlNC5sYWIuZXhhbXBsZS5jb20uCg==' | base
 echo "Permission assinging in Progress..."
 sleep 2
 ssh root@utility  "chmod 644 /data/named/lab.example.com.zone"
+ssh root@utility  "sed -i 's/\<80\>/8080/g' /etc/nginx/nginx.conf"
+ssh root@utility  "systemctl restart nginx"
+ssh root@utility  "firewall-cmd   --permanent  --add-port=8080/tcp"
+ssh root@utility  "firewall-cmd --reload"
 ssh root@servera  "hostnamectl set-hostname node1.lab.example.com ; hostname node1.lab.example.com"   > /dev/null 2>&1
 ssh root@serverb  "hostnamectl set-hostname node2.lab.example.com ; hostname node2.lab.example.com"   > /dev/null 2>&1
 ssh root@serverc  "hostnamectl set-hostname node3.lab.example.com ; hostname node3.lab.example.com"   > /dev/null 2>&1
