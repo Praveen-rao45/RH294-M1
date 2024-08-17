@@ -1,4 +1,4 @@
-# RH294V9K Mock 1
+# RH294V9K Mock 2
 
 # Delete the Lab & Recreate it again
 
@@ -6,7 +6,7 @@
 
 # su - root
 # password: redhat
-# git clone https://github.com/Prithivrajgankai/RH294-M1.git
+# git clone https://github.com/Prithivrajgankai/RH294-M2.git
 # cd RH294-M1
 # sh exam-init.sh
 # Now open firefox and type "http://localhost/Rhce/mock1/"
